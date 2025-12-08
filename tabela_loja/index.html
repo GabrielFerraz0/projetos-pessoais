@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dados da Tabela — Loja TechPlus</title>
     <style>
-        
-        table{
-            font-family: Arial, Helvetica, sans-serif;
-            border-collapse: collapse;
-            min-width: 800px;
-            margin: auto;
-            max-width: max-content;
-        }
-        caption{
-            font-size: 1.8em;
-            padding: 10px;
-            font-weight: 500;
-        }
-        th,td{
-            border: 1px solid rgba(46, 40, 40, 0.725);
-            text-align: center;
-            padding: 5px;
-        }
-        #container{
-            overflow-x: auto;;
-        }
-        .linha_dados:hover{
-            background-color: rgb(92, 150, 92);
-            color: white;
-        }
-        .foot{
-            background-color: white;
-            text-align: left;
-            font-weight: 600;
-        }
+      table {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        min-width: 800px;
+        margin: auto;
+        max-width: max-content;
+      }
+      caption {
+        font-size: 1.8em;
+        padding: 10px;
+        font-weight: 500;
+      }
+      th,
+      td {
+        border: 1px solid rgba(46, 40, 40, 0.725);
+        text-align: center;
+        padding: 5px;
+      }
+      #container {
+        overflow-x: auto;
+      }
+      tbody tr:hover {
+        background-color: rgb(92, 150, 92);
+        color: white;
+      }
+      .foot {
+        background-color: white;
+        text-align: left;
+        font-weight: 600;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <table>
-            <colgroup>
-                <col span="2" style="background-color: rgb(243, 206, 179);">
-                <col span="3" style="background-color: rgb(180, 243, 222);">
-            </colgroup>
-            <caption>Dados da Tabela — Loja TechPlus</caption>
-            <thead>
-                <tr id="linha_dados">
-                    <th scope="col">Categoria</th>
-                    <th class="linha_dados" scope="col">Produto</th>
-                    <th scope="col">Preço (R$)</th>
-                    <th scope="col">Estoque</th>
-                    <th scope="col">Código</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th rowspan="3">Eletrônicos</th>
-                    <td class="linha_dados">Fone Bluetooth</td>
-                    <td>149.90</td>
-                    <td>25</td>
-                    <td>EL001</td>
-                </tr>
-                <tr>
-                    <td class="linha_dados">Teclado Mecânico</td>
-                    <td>329.00</td>
-                    <td>12</td>
-                    <td>EL002</td>
-                </tr>
-                <tr>
-                    <td class="linha_dados">Webcam HD</td>
-                    <td>199.50</td>
-                    <td>8</td>
-                    <td>EL003</td>
-                </tr>
-                <tr>
-                    <th rowspan="2">Acessórios</th>
-                    <td class="linha_dados">Mousepad Gamer</td>
-                    <td>59.90</td>
-                    <td>40</td>
-                    <td>AC001</td>
-                </tr>
-                <tr>
-                    <td class="linha_dados">Suporte para Notebook</td>
-                    <td>89.90</td>
-                    <td>15</td>
-                    <td>AC002</td>
-                </tr>
-                <tr>
-                    <th rowspan="2">Escritório</th>
-                    <td class="linha_dados">Impressora Laser</td>
-                    <td>799.00</td>
-                    <td>5</td>
-                    <td>ES001</td>
-                </tr>
-                <tr>
-                    <td class="linha_dados">Cadeira Ergonômica</td>
-                    <td>999.90</td>
-                    <td>7</td>
-                    <td>ES002</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td class="foot" colspan="4">Total de produtos:</td>
-                    <td style="background-color: white;">7</td>
-                </tr>
-                <tr>
-                    <td class="foot" colspan="4">Total de Preço:</td>
-                    <td style="background-color: white;">2627,1</td>
-                </tr>
-            </tfoot>
-        </table>
+      <table>
+        <colgroup>
+          <col span="2" style="background-color: rgb(243, 206, 179)" />
+          <col span="3" style="background-color: rgb(180, 243, 222)" />
+        </colgroup>
+        <caption>
+          Dados da Tabela — Loja TechPlus
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">Categoria</th>
+            <th scope="col">Produto</th>
+            <th scope="col">Preço (R$)</th>
+            <th scope="col">Estoque</th>
+            <th scope="col">Código</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="3">Eletrônicos</th>
+            <td>Fone Bluetooth</td>
+            <td>149.90</td>
+            <td>25</td>
+            <td>EL001</td>
+          </tr>
+          <tr>
+            <td class="linha_dados">Teclado Mecânico</td>
+            <td>329.00</td>
+            <td>12</td>
+            <td>EL002</td>
+          </tr>
+          <tr>
+            <td class="linha_dados">Webcam HD</td>
+            <td>199.50</td>
+            <td>8</td>
+            <td>EL003</td>
+          </tr>
+          <tr>
+            <th rowspan="2">Acessórios</th>
+            <td class="linha_dados">Mousepad Gamer</td>
+            <td>59.90</td>
+            <td>40</td>
+            <td>AC001</td>
+          </tr>
+          <tr>
+            <td class="linha_dados">Suporte para Notebook</td>
+            <td>89.90</td>
+            <td>15</td>
+            <td>AC002</td>
+          </tr>
+          <tr>
+            <th rowspan="2">Escritório</th>
+            <td class="linha_dados">Impressora Laser</td>
+            <td>799.00</td>
+            <td>5</td>
+            <td>ES001</td>
+          </tr>
+          <tr>
+            <td class="linha_dados">Cadeira Ergonômica</td>
+            <td>999.90</td>
+            <td>7</td>
+            <td>ES002</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="foot" colspan="4">Total de produtos:</td>
+            <td style="background-color: white">7</td>
+          </tr>
+          <tr>
+            <td class="foot" colspan="4">Total de Preço:</td>
+            <td style="background-color: white">2627,1</td>
+          </tr>
+        </tfoot>
+      </table>
     </div>
-</body>
+  </body>
 </html>
