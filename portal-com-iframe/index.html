@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InovaLog | Portal de Estudos Tecnológicos</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      body {
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: black;
+        color: white;
+      }
+      header {
+        text-align: center;
+        padding: 60px 20px;
+        background: linear-gradient(
+          135deg,
+          #020617 0%,
+          #0f172a 50%,
+          #1e3a8a 100%
+        );
+        border-bottom: 2px solid #38bdf8;
+      }
+      header h1 {
+        font-family: "inter", sans-serif;
+        font-weight: 900; /* Deixa a fonte bem robusta */
+        font-size: 4rem; /* Tamanho de destaque */
+        color: #f8fafc; /* Um branco levemente azulado */
+        letter-spacing: -3px; /* Efeito de aproximação das letras (estilo logo) */
+        margin-bottom: 10px; /* Espaço para o parágrafo não grudar */
+
+        /* Um brilho sutil para dar vida ao título sobre o fundo escuro */
+        text-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      }
+      header h1 span {
+        color: #38bdf8; /* Azul neon vibrante */
+      }
+      header p {
+        font-family: "Inter", sans-serif;
+        font-weight: 400; /* Peso normal para leitura */
+        font-size: 1.1rem; /* Tamanho equilibrado */
+        color: #94a3b8; /* Cinza azulado (combina com o fundo) */
+        line-height: 1.8; /* Espaçamento entre linhas para não cansar a vista */
+        max-width: 600px; /* Evita que o texto fique largo demais */
+        margin: 0 auto; /* Centraliza o bloco de texto */
+      }
+      header p strong {
+        color: #38bdf8; /* O azul neon para destacar a marca no texto */
+        font-weight: 700;
+      }
+      nav {
+        background-color: #020820d6; /* Um tom bem escuro para separar do header */
+        padding: 15px 0;
+        border-bottom: 1px solid #1e293b; /* Uma linha bem discreta */
+      }
+      nav ul {
+        list-style-type: none; /* Aqui é para matar as "bolinhas" da lista */
+        display: flex; /* A "mágica" para colocar os itens lado a lado */
+        justify-content: center; /* Centraliza os links horizontalmente */
+        gap: 40px; /* Define o espaço entre um link e outro */
+        padding: 0;
+      }
+      nav ul li a {
+        text-decoration: none; /* Tira aquele sublinhado azul padrão */
+        color: #5782bd;
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-transform: uppercase; /* Deixa tudo em maiúsculo para dar um ar de menu */
+        letter-spacing: 1px; /* Espaça um pouco as letras */
+        transition: 0.3s ease; /* Deixa a troca de cor suave ao passar o mouse */
+      }
+      nav ul li a:hover {
+        color: #38bdf8; /* Acende o azul neon que está no strong */
+      }
+      main {
+        padding: 40px 20px;
+        display: flex;
+        justify-content: center; /* Centraliza o iframe na tela */
+        background-color: #000; /* Garante que o fundo do main seja preto */
+      }
+      iframe {
+        width: 100%;
+        max-width: 1000px; /* Largura máxima para não ficar gigante em monitores UltraWide */
+        height: 600px; /* Altura fixa confortável */
+        border: 2px solid #1e293b;
+        border-radius: 12px; /* Bordas arredondadas para um visual moderno */
+        box-shadow: 0 0 8px #0ff, 0 1px 25px;
+        /* Sombra para dar profundidade */
+        background-color: #cac6c6; /* Fundo branco para as páginas que carregarem dentro dele */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Inova<span>Log</span></h1>
+      <p>
+        Onde a inovação se transforma em conhecimento. No
+        <strong>InovaLog</strong>, registramos o passo a passo das tecnologias
+        que estão moldando o futuro, facilitando sua jornada de aprendizado do
+        código à prática.
+      </p>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="inicio.html" target="conteudo">inicio</a></li>
+        <li><a href="aula.html" target="conteudo">Aulas</a></li>
+        <li><a href="contato.html" target="conteudo">Contatos</a></li>
+      </ul>
+    </nav>
+    <main>
+      <iframe name="conteudo" src="capa.html"></iframe>
+    </main>
+  </body>
+</html>
