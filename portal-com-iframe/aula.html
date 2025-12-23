@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        background-color: #000;
+        color: white;
+        font-family: "Segoe UI", sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: #0ff;
+        text-shadow: 0 0 10px #0ff;
+        margin-bottom: 40px;
+      }
+      dl {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      /* ESTILO DO CARD*/
+      .card-aula {
+        border: 1px solid #333;
+        border-left: 5px solid #0ff;
+        background: rgba(255, 255, 255, 0.03);
+        padding: 20px;
+        border-radius: 8px;
+        transition: transform 0.3s;
+      }
+      .card-aula:hover {
+        transform: scale(1.02);
+        border-color: #0ff;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
+      }
+      dt {
+        font-size: 1.4rem;
+        color: #0ff;
+        margin-bottom: 15px;
+      }
+      /* ORGANIZAÇÃO TEXTO + IMAGEM*/
+      .info-container {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      .info-container p {
+        margin: 0;
+        line-height: 1.6;
+        flex: 1;
+      }
+      .info-container img {
+        width: 120px; /*Tamanho fixo para as logos*/
+        height: 120px;
+        object-fit: contain; /* Garante que a imagem não distorça */
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        border: 1px solid #444;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Aulas Disponiveis</h1>
+    <dl>
+      <div class="card-aula">
+        <dt><strong>Fundamentos do HTML5</strong></dt>
+        <dd>
+          <div class="info-container">
+            <p>
+              A base de tudo. Aqui você aprenderá a dar significado aos dados,
+              utilizando tags semânticas para construir a estrutura que os
+              navegadores e o Google amam. É onde o seu projeto ganha corpo e
+              acessibilidade.
+            </p>
+            <img src="imagens/html-imagem.png" alt="Logo html" />
+          </div>
+        </dd>
+      </div>
+
+      <div class="card-aula">
+        <dt><strong>Estilização com CSS3</strong></dt>
+        <dd>
+          <div class="info-container">
+            <p>
+              Onde a mágica visual acontece. Nesta etapa, exploramos o poder das
+              cores, tipografia, efeitos neon e layouts responsivos com Flexbox
+              e Grid. É o toque de mestre que transforma um documento simples em
+              uma experiência tecnológica.
+            </p>
+            <img src="imagens/css-imagem.png" alt="Logo de CSS" />
+          </div>
+        </dd>
+      </div>
+
+      <div class="card-aula">
+        <dt><strong>Interatividade com JavaScript</strong></dt>
+        <dd>
+          <div class="info-container">
+            <p>
+              O cérebro do seu portal. Aqui você aprenderá a manipular o DOM,
+              criar eventos de clique, validar formulários e dar vida às suas
+              páginas com lógica pura. O JavaScript transforma seu site estático
+              em uma aplicação dinâmica.
+            </p>
+            <img src="imagens/Javascript-imagem.png" alt="Logo de JavaScript" />
+          </div>
+        </dd>
+      </div>
+    </dl>
+  </body>
+</html>
